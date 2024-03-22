@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diart</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css">
+    <script src="app/menu.js"></script>
+</head>
+<body>
+    <main class="main-explicacion">
+        <div class="container">
+            <h2>DIIART</h2>
+            <button id="iniciarJuego" class="iniciarJuego" onclick="window.location.href='mapa.html'"><img src="assets/img/boton_iniciar.png" alt="iniciar" class="boton_iniciar"></button>
+            <button id="instrucciones" class="instrucciones"><img src="assets/img/boton_instrucciones.png" alt="instrucciones" class="boton_instrucciones"></button>
+        </div>
+    </main>
+
+    <div id="overlay" class="overlay"></div>
+
+    <div id="popup" class="popup">
+        <p>¡Bienvenid@ a diart! Un reto cultural sobre historia del arte y sus vanguardias, 
+            Donde te enfrentarás a diversas preguntas relacionadas con la materia y 
+            tendrás que superar cada nivel del mapa artístico. 
+            ¡Mucha suerte!</p>
+        
+        <button onclick="toggleMute()">Silenciar</button>
+        <button onclick="hidePopup()">X</button>
+    </div>
+    
+</body>
+</html>
